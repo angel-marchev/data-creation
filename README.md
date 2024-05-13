@@ -4,110 +4,6 @@
 
 ![](img/data_synth0.png)
 
-# prof. Angel Marchev Jr., PhD
-
-<span style="color:#000000"> __prof\. Angel Marchev Jr\. PhD __ </span>  <span style="color:#000000">considers himself a fusion of thought explorer and a digital native\. He is also a coeval and a very good friend to the personal computer for the last four decades\. He has been educated by computer games since the age of four\. </span>
-
-<span style="color:#000000">Angel has graduated in finance at the University for National and World Economy as a merit student\. He later finished master degree in corporate finance at the Burgas Free University\. He pursued a career as a Bank analyst but found it is too formalistic and not enough challenging\. </span>
-
-<span style="color:#000000">Marchev Jr\. has at least ten generations of professors in his genealogy\, and it was only natural to choose the same career\. By the time he finished high school he already participated as Instructor for various courses\. Since then\, he has excelled at implementing active methods in all of them\. Practically 100% of his classes are either interactive or games\. He has more than 20 years of teaching experience implementing active methods of learning at UNWE\, Sofia University\, BFU\, etc\.:</span>
-
-<span style="color:#000000">He is a Ph\.D\. at implementation of computer simulation and modeling in investment portfolio theory\. He has specialized in risk theory at a summer institute\, organized by European mathematical society\. Specialized at Engage\.EU Think Tank\, Mannheim\. He is also a certified SME consultant by the Instiituut voor het Midden en Kleinbdrijf\.</span>
-
-<span style="color:#000000">Angel Marchev\, Jr\. has more  than 50 publications\. His academic interests include cybernetics\, systems theory\, computer simulation\, simulation and gaming\, principles of self\-organization\, investment portfolios\, adaptive algorithms\, forecasting methods among other\.</span>
-
-<span style="color:#000000">He has earned valuable international experience while teaching in several prestigious Erasmus Programs \(on Project management; on Supply chain management; on Financial management\) where he has always received the positive feedback \(in any meaning\) from the students and from the participating teaching stuff\.</span>
-
-![](img/data_synth1.png)
-
-<span style="color:#0000FF"> _[angel\.marchev@feb\-uni\-sofia\.bg](mailto:angel.marchev@feb-uni-sofia.bg)_ </span>
-
-![](img/data_synth2.png)
-
-![](img/data_synth3.png)
-
-![](img/data_synth4.png)
-
-![](img/data_synth5.png)
-
-![](img/data_synth6.png)
-
-![](img/data_synth7.png)
-
-![](img/data_synth8.png)
-
-![](img/data_synth9.png)
-
-![](img/data_synth10.png)
-
-![](img/data_synth11.png)
-
-![](img/data_synth12.png)
-
-<span style="color:#000000">prof\. Angel Marchev Jr\.\, PhD</span>
-
-<span style="color:#000000"> _Notable research projects_ </span>  <span style="color:#000000"> _:_ </span>
-
-<span style="color:#000000">Risk theory and related topics\, European Mathematical Society</span>
-
-<span style="color:#000000">Autonomous Investment Portfolio on Bulgarian Stock Exchange\, UNWE</span>
-
-<span style="color:#000000">Case EVN minority share buyout\, National Investigation Agency</span>
-
-<span style="color:#000000">Next best offer\, DSK Bank </span>
-
-<span style="color:#000000">Discovering the hidden factors\, Center Stars</span>
-
-<span style="color:#000000">Data validation\, Boston Consulting Group</span>
-
-<span style="color:#000000">Predict the Air Pollution by Geo\-locations in Sofia\, Joint Research Center</span>
-
-<span style="color:#000000">Elevator Lab\, Raiffeisen Bank</span>
-
-<span style="color:#000000">Discovering market insights\, GameSpot</span>
-
-<span style="color:#000000">Financial services recommendation\, UNWE</span>
-
-<span style="color:#000000">Gamifying skills testing\, Pleggi</span>
-
-<span style="color:#000000">Innoair – On\-demand transport\, Sofia Municipality</span>
-
-<span style="color:#000000">Investment recommender system\, Camplight</span>
-
-<span style="color:#000000">Taxpayer insolvency\, National Revenue Agency</span>
-
-<span style="color:#000000">Educating experts on data analysis in National Statistical Institute</span>
-
-![](img/data_synth13.png)
-
-![](img/data_synth14.jpg)
-
-![](img/data_synth15.jpg)
-
-![](img/data_synth16.png)
-
-![](img/data_synth17.png)
-
-![](img/data_synth18.jpg)
-
-![](img/data_synth19.png)
-
-![](img/data_synth20.jpg)
-
-![](img/data_synth21.jpg)
-
-![](img/data_synth22.png)
-
-![](img/data_synth23.png)
-
-![](img/data_synth24.png)
-
-![](img/data_synth25.png)
-
-![](img/data_synth26.jpg)
-
-![](img/data_synth27.jpg)
-
 # What?
 
 <span style="color:#000000">\(</span>  <span style="color:#374151">What is Synthetic Data?\)</span>
@@ -464,6 +360,6 @@ List with publications:
 
 6\. Marchev\, V\. Marchev\, A\.\, 2024\, Anonymizing Personal Information Using Distribution\-based Data Synthesis\, in publishing\.
 
-7\. Lyubchev\, D\.\, Marchev\, A\.\, Marchev\, V\. – Copula\(2024\)
+7\. Lyubchev\, D\.\, Marchev\, A\.\, Marchev\, V\., Inverse copula sampling for multi-dimensional data synthesis\(2024\)
 
-8\. Marchev\, V\. Marchev\, A\. \- GAN\(2025\)
+8\. Marchev\, V\. Marchev\, A\., Methodological Considerations for Anonymizing Tabular Data Using Generative Adversarial Networks\(2025\)
