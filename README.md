@@ -8,7 +8,7 @@
 
 ## What?
 
-<span style="color:#000000">\(</span>  <span style="color:#374151">What is Synthetic Data?\)</span>
+**(What is Synthetic Data?)**
 
 * mimics real-world data
 
@@ -24,7 +24,7 @@
 
 ## WHY?
 
-<span style="color:#000000">\(Why create data as means for data analysis?\)</span>
+**(Why create data as means for data analysis?)**
 
 * imbalanced data (incl. short dataset) => oversampling, validation data
 
@@ -60,12 +60,13 @@
 
 <table>
   <tr>
-    <th> <ul>
-     <li>inference based (crosslinked) modeling (horizontal && vertical)</li>
-     <li>vs</li>
-     <li>single variable imputation (vertical)</li>
+    <th>
+      <ul style="float:left;">
+        <li>inference based (crosslinked) modeling (horizontal && vertical)</li>
+        <li>vs</li>
+        <li>single variable imputation (vertical)</li>
      </ul>
-</th>
+    </th>
     <th><img src="img/data_synth31.png" width="600"/></th>
   </tr>
 </table>
@@ -74,25 +75,27 @@
 
 ## Data imputation tricks
 
-![](img/data_synth32.png)
-
-<span style="color:#000000">distribution preservation noise</span>
-
-<span style="color:#000000">“</span>  <span style="color:#000000">unknown” class</span>
-
-<span style="color:#000000">mean by subclass instead of the whole variable</span>
-
-<span style="color:#000000">The orthogonal view</span>
+<table>
+  <tr>
+    <th>
+      <ul style=text-align:left;">
+        <li>distribution preservation noise</li>
+        <li>"unknown" class</li>
+        <li>mean by subclass instead of the whole variable</li>
+        <li>The orthogonal view</li>
+     </ul>
+    </th>
+    <th><img src="img/data_synth32.png" width="700"/></th>
+  </tr>
+</table>
 
 <hr>
 
 ## Distribution altering single variable imputation
 
-![](img/data_synth57.png)
+<img src="img/data_synth57.png" width="700"/
 
 ## Random Naive Oversampling
-
-![](img/data_synth33.png)
 
 <span style="color:#000000">randomly duplicating instances from the minority class until it is balanced with the majority class</span>
 
@@ -103,6 +106,8 @@
 <span style="color:#000000">The simplest possible technique</span>
 
 <span style="color:#000000">can lead to overfitting\, where the model trains to replicate too closely the repeated class\.</span>
+
+![](img/data_synth33.png)
 
 ![](img/data_synth34.png)
 
