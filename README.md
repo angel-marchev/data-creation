@@ -26,25 +26,23 @@
 
 <span style="color:#000000">\(Why create data as means for data analysis?\)</span>
 
-<span style="color:#000000">imbalanced data \(incl\. short dataset\) => oversampling\, validation data</span>
+* imbalanced data (incl. short dataset) => oversampling, validation data
 
-<span style="color:#000000">feature engineering \(incl\. non\-linear transform\) => transformation</span>
+* feature engineering (incl. non-linear transform) => transformation
 
-<span style="color:#000000">missing data => partial imputation</span>
+* missing data => partial imputation
 
-<span style="color:#000000">data privacy regulations => synthetic dataset</span>
+* data privacy regulations => synthetic dataset
 
-<span style="color:#000000">lack of real data => synthetic dataset</span>
+* lack of real data => synthetic dataset
 
-<span style="color:#000000">cost savings => synthetic dataset</span>
+* cost savings => synthetic dataset
 
-<span style="color:#000000">\(main emphasis today is synthesis of structured data\, but some imputation is also within the scope due to methodical</span>
+(main emphasis today is synthesis of structured data, but some imputation is also within the scope due to methodical)
 
 <hr>
 
 ![](img/data_synth28.png)
-
-# 
 
 <hr>
 
@@ -54,7 +52,9 @@
 
 <span style="color:#000000"> _ _ </span>  <span style="color:#000000"> _Blue points are observations whereas red points are missing observations in the y\-variable; _ </span>  <span style="color:#000000"> _statistics for complete data \(blue and red combined\) are slope \(b\) = 1\, standard error \(se\) = 0\.05 and R2 = 0\.5\. Assuming observations in the x\-variable are complete\, \(a\) represents missing at random \(MAR\)\, \(b\) represents missing not at random \(MNAR\) and \(c\) represents missing completely at random \(MCAR\)\. For the observed data \(blue points\)\, the estimated slope\, se and R2\, are \(a\) b = 0\.86\, se = 0\.11\, R2 = 0\.29\, \(b\) b = 0\.432\, se = 0\.06\, R2 = 0\.23 and \(c\) b = 0\.957\, se = 0\.07\, R2 = 0\.49\._ </span>
 
-![](img/data_synth30.jpg) <img src="img/data_synth29.jpg" width="100"/>
+![](img/data_synth30.jpg) <img src="img/data_synth29.jpg" width="200"/>
+
+<hr>
 
 # Imputation methods
 
@@ -72,6 +72,8 @@
 
 <span style="color:#000000">Alternate</span>  <span style="color:#000000">	</span>  <span style="color:#000000">	</span>  <span style="color:#000000">	</span>  <span style="color:#000000">  Factorial \(Latent\)</span>
 
+<hr>
+
 # Data imputation tricks
 
 ![](img/data_synth32.png)
@@ -84,11 +86,11 @@
 
 <span style="color:#000000">The orthogonal view</span>
 
+<hr>
+
 # Distribution altering single variable imputation
 
-<span style="color:#000000">Linear interpolation</span>
-
-<span style="color:#000000">Mean of the known values</span>
+![](img/data_synth57.png)
 
 # Random Naive Oversampling
 
