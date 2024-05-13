@@ -42,35 +42,33 @@
 
 <hr>
 
-![](img/data_synth28.png)
+<img src="img/data_synth28.png" width="600"/>
 
 <hr>
 
 ## Data imputation
 
-<span style="color:#000000">various reasons for missing data\, but main reasoning for imputation is if the missing data is related to other variables</span>
-
-<span style="color:#000000"> _ _ </span>  <span style="color:#000000"> _Blue points are observations whereas red points are missing observations in the y\-variable; _ </span>  <span style="color:#000000"> _statistics for complete data \(blue and red combined\) are slope \(b\) = 1\, standard error \(se\) = 0\.05 and R2 = 0\.5\. Assuming observations in the x\-variable are complete\, \(a\) represents missing at random \(MAR\)\, \(b\) represents missing not at random \(MNAR\) and \(c\) represents missing completely at random \(MCAR\)\. For the observed data \(blue points\)\, the estimated slope\, se and R2\, are \(a\) b = 0\.86\, se = 0\.11\, R2 = 0\.29\, \(b\) b = 0\.432\, se = 0\.06\, R2 = 0\.23 and \(c\) b = 0\.957\, se = 0\.07\, R2 = 0\.49\._ </span>
+* various reasons for missing data, but main reasoning for imputation is if the missing data is related to other variables
 
 ![](img/data_synth30.jpg) <img src="img/data_synth29.jpg" width="200"/>
+
+* Blue points are observations whereas red points are missing observations in the y-variable; statistics for complete data (blue and red combined) are slope (b) = 1, standard error (se) = 0.05 and R2 = 0.5. Assuming observations in the x-variable are complete, (a) represents missing at random (MAR), (b) represents missing not at random (MNAR) and (c) represents missing completely at random (MCAR). For the observed data (blue points), the estimated slope, se and R2, are (a) b = 0.86, se = 0.11, R2 = 0.29, (b) b = 0.432, se = 0.06, R2 = 0.23 and (c) b = 0.957, se = 0.07, R2 = 0.49.
 
 <hr>
 
 ## Imputation methods
 
-![](img/data_synth31.png)
-
-<span style="color:#000000">inference based \(crosslinked\) modeling \(horizontal && vertical\)</span>
-
-<span style="color:#000000">vs</span>
-
-<span style="color:#000000"> </span>  <span style="color:#000000">single variable imputation \(vertical\)</span>
-
-<span style="color:#000000">Single variate</span>  <span style="color:#000000">	</span>  <span style="color:#000000">	</span>  <span style="color:#000000">  Multi\-variate</span>
-
-<span style="color:#000000">Monotonous</span>  <span style="color:#000000">	</span>  <span style="color:#000000">	</span>  <span style="color:#000000">  General</span>
-
-<span style="color:#000000">Alternate</span>  <span style="color:#000000">	</span>  <span style="color:#000000">	</span>  <span style="color:#000000">	</span>  <span style="color:#000000">  Factorial \(Latent\)</span>
+<table>
+  <tr>
+    <th> <ul>
+     <li>inference based (crosslinked) modeling (horizontal && vertical)</li>
+     <li>vs</li>
+     <li>single variable imputation (vertical)</li>
+     </ul>
+</th>
+    <th><img src="img/data_synth31.png" width="600"/></th>
+  </tr>
+</table>
 
 <hr>
 
