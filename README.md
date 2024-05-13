@@ -6,7 +6,7 @@
 
 <hr>
 
-# What?
+## What?
 
 <span style="color:#000000">\(</span>  <span style="color:#374151">What is Synthetic Data?\)</span>
 
@@ -22,7 +22,7 @@
 
 <hr>
 
-# WHY?
+## WHY?
 
 <span style="color:#000000">\(Why create data as means for data analysis?\)</span>
 
@@ -46,7 +46,7 @@
 
 <hr>
 
-# Data imputation
+## Data imputation
 
 <span style="color:#000000">various reasons for missing data\, but main reasoning for imputation is if the missing data is related to other variables</span>
 
@@ -56,7 +56,7 @@
 
 <hr>
 
-# Imputation methods
+## Imputation methods
 
 ![](img/data_synth31.png)
 
@@ -74,7 +74,7 @@
 
 <hr>
 
-# Data imputation tricks
+## Data imputation tricks
 
 ![](img/data_synth32.png)
 
@@ -88,11 +88,11 @@
 
 <hr>
 
-# Distribution altering single variable imputation
+## Distribution altering single variable imputation
 
 ![](img/data_synth57.png)
 
-# Random Naive Oversampling
+## Random Naive Oversampling
 
 ![](img/data_synth33.png)
 
@@ -110,7 +110,7 @@
 
 <hr>
 
-# SMOTE and Variants
+## SMOTE and Variants
 
 <span style="color:#000000">SMOTE \(Synthetic Minority Over\-sampling Technique\) is an algorithm for generating synthetic data\, specifically designed to address the problem of imbalanced datasets</span>
 
@@ -166,15 +166,15 @@
 
 <hr>
 
-# Random numbers generators
+## Random numbers generators
 
 ![](img/data_synth37.png)
 
-![](img/data_synth38.png)
-
 <hr>
 
-# Monte-Carlo simulation
+## Monte-Carlo simulation
+
+![](img/data_synth38.png)
 
 <span style="color:#374151">randomly generate many possible outcomes and use accumulation of these outcomes as an estimate of the expected value\.</span>
 
@@ -186,7 +186,7 @@
 
 <hr>
 
-# Statistical distributions
+## Statistical distributions
 
 ![](img/data_synth44.png)
 
@@ -200,7 +200,7 @@
 
 <hr>
 
-# Generating synthetic observations
+## Generating synthetic observations
 
 <span style="color:#000000">\(Methodological background \)</span>
 
@@ -250,7 +250,7 @@
 
 <hr>
 
-# Use case: only distributions
+## Use case: only distributions
 
 * <span style="color:#000000">IF Separate distributions for every variable:</span>
   * <span style="color:#000000">are available</span>
@@ -265,7 +265,7 @@
 
 <hr>
 
-# Use case: distributions & correlations
+## Use case: distributions & correlations
 
 * <span style="color:#000000">IF Separate distributions for every variable:</span>
   * <span style="color:#000000">are available</span>
@@ -285,7 +285,7 @@
 
 <hr>
 
-# Use case: joint distribution
+## Use case: joint distribution
 
 * <span style="color:#000000">IF Multi\-variate joint distribution \(copula function\) is available</span>
 * <span style="color:#000000">THEN</span>
@@ -298,7 +298,7 @@
 
 <hr>
 
-# Use case: some real features
+## Use case: some real features
 
 * <span style="color:#000000">IF partial real data set is available</span>
 * <span style="color:#000000">AND business rules have to be derived</span>
@@ -314,7 +314,7 @@
 
 <hr>
 
-# Use case: parts of data sets
+## Use case: parts of data sets
 
 * <span style="color:#000000">IF parts of various data sets are available:</span>
   * <span style="color:#000000">From different sources</span>
@@ -330,7 +330,7 @@
 
 <hr>
 
-# Use case: full data sets
+## Use case: full data sets
 
 ![](img/data_synth54.png)
 
@@ -354,7 +354,7 @@ Less data limitations & challenges => => => => =>
 
 <hr>
 
-# Sci-kit learn functions
+## Sci-kit learn functions
 
 Scikit-learn offers several functions for synthesizing datasets, each tailored for different types of data and machine learning problems. These functions are useful for generating data for experimentation, education, and benchmarking algorithms. Here are some of the main functions provided by Scikit-learn for data synthesis. Each of these functions allows you to specify parameters such as the number of samples, features, informative features, and levels of noise, giving you a lot of flexibility in generating datasets that fit your specific needs for testing and training machine learning models.
     
@@ -432,7 +432,7 @@ X, y = make_friedman1(n_samples=100, n_features=10, noise=0.0)
 
 <hr>
 
-# The Case
+## The Case
 
 <span style="color:#0000FF"> _[https://github\.com/angel\-marchev/case\-cold\-start\-modeling](https://github.com/angel-marchev/case-cold-start-modeling)_ </span>
 
@@ -440,7 +440,7 @@ X, y = make_friedman1(n_samples=100, n_features=10, noise=0.0)
 
 <hr>
 
-# See also
+## See also
 
 <span style="color:#000000">How to Use Synthetic and Simulated Data Effectively</span>
 
@@ -456,7 +456,7 @@ X, y = make_friedman1(n_samples=100, n_features=10, noise=0.0)
 
 <hr>
 
-# List with publications:
+## List with publications:
 
 1\. Marchev\, A\.\, Marchev\, V\.\, 2024\, Automated Algorithm for Multi\-variate Data Synthesis with Cholesky Decomposition\, ICACS 2023: the 7th International Conference on Algorithms\, Computing and Systems\, Larissa Greece\, Association for Computing Machinery\, New York\, pp\. 1 – 6\, ISBN:979\-8\-4007\-0909\-8\, DOI: 10\.1145/3631908\.3631909;
 
