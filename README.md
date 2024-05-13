@@ -108,6 +108,8 @@
 
 ![](img/data_synth34.png)
 
+<hr>
+
 # SMOTE and Variants
 
 <span style="color:#000000">SMOTE \(Synthetic Minority Over\-sampling Technique\) is an algorithm for generating synthetic data\, specifically designed to address the problem of imbalanced datasets</span>
@@ -119,6 +121,8 @@
 ![](img/data_synth35.png)
 
 ![](img/data_synth36.png)
+
+<hr>
 
 <span style="color:#000000"> __SMOTE__ </span>  <span style="color:#000000"> \(and its many variations\) use the same algorithm to generate new samples\. Considering a sample </span>  <span style="color:#000000"> __x__ </span>  <span style="color:#000000"> _i_ </span>  <span style="color:#000000">\, a new sample </span>  <span style="color:#000000"> __x__ </span>  <span style="color:#000000"> _new_ </span>  <span style="color:#000000"> will be generated considering its k\- neareast\-neighbors \(corresponding to </span>  <span style="color:#000000"> __k__ </span>  <span style="color:#000000"> _neighbors_ </span>  <span style="color:#000000">\)\. </span>
 
@@ -160,11 +164,15 @@
 
 <span style="color:#000000">SMOTE is not very practical for high\-dimensional data\.</span>
 
+<hr>
+
 # Random numbers generators
 
 ![](img/data_synth37.png)
 
 ![](img/data_synth38.png)
+
+<hr>
 
 # Monte-Carlo simulation
 
@@ -176,13 +184,7 @@
 
 ![](img/data_synth39.png)
 
-![](img/data_synth40.png)
-
-![](img/data_synth41.png)
-
-![](img/data_synth42.png)
-
-![](img/data_synth43.jpg)
+<hr>
 
 # Statistical distributions
 
@@ -195,6 +197,8 @@
 <span style="color:#000000">Method of moments \(or GMM\)</span>
 
 <span style="color:#000000">for distribution fitting</span>
+
+<hr>
 
 # Generating synthetic observations
 
@@ -244,6 +248,8 @@
 
 ![](img/data_synth45.png)
 
+<hr>
+
 # Use case: only distributions
 
 * <span style="color:#000000">IF Separate distributions for every variable:</span>
@@ -256,6 +262,8 @@
   * <span style="color:#000000">Record\-wise business rules filtering</span>
 
 ![](img/data_synth46.png)
+
+<hr>
 
 # Use case: distributions & correlations
 
@@ -275,6 +283,8 @@
 
 ![](img/data_synth48.png)
 
+<hr>
+
 # Use case: joint distribution
 
 * <span style="color:#000000">IF Multi\-variate joint distribution \(copula function\) is available</span>
@@ -285,6 +295,8 @@
 ![](img/data_synth49.png)
 
 ![](img/data_synth50.png)
+
+<hr>
 
 # Use case: some real features
 
@@ -300,6 +312,8 @@
 
 ![](img/data_synth52.png)
 
+<hr>
+
 # Use case: parts of data sets
 
 * <span style="color:#000000">IF parts of various data sets are available:</span>
@@ -313,6 +327,8 @@
   * <span style="color:#000000">In case of inconclusive fuzzy matching score or duplicates\, pick randomly \(probabilistic concatenation\)</span>
 
 ![](img/data_synth53.png)
+
+<hr>
 
 # Use case: full data sets
 
@@ -330,15 +346,99 @@
     * <span style="color:#000000">If discrimination is successful feed the result to the generative ANN for next simulation</span>
     * <span style="color:#000000">Else feed the result to discriminative ANN to improve discrimination next time</span>
 
+<hr>
+
 ![](img/data_synth55.png)
 
-# Less data limitations & challenges => => => => =>
+Less data limitations & challenges => => => => =>
+
+<hr>
+
+# Sci-kit learn functions
+
+Scikit-learn offers several functions for synthesizing datasets, each tailored for different types of data and machine learning problems. These functions are useful for generating data for experimentation, education, and benchmarking algorithms. Here are some of the main functions provided by Scikit-learn for data synthesis. Each of these functions allows you to specify parameters such as the number of samples, features, informative features, and levels of noise, giving you a lot of flexibility in generating datasets that fit your specific needs for testing and training machine learning models.
+    
+
+### 0. **`make_classification`**
+This function is highly useful for generating a random n-class classification problem, which helps in testing classification algorithms or for illustrative purposes. 
+
+
+```python
+from sklearn.datasets import make_classification
+X, y = make_classification(n_classes=2, class_sep=2, weights=[0.1, 0.9], n_informative=2, n_redundant=0, 
+    flip_y=0, n_features=2, n_clusters_per_class=1, n_samples=100, random_state=42)
+```
+
+### 1. **`make_regression`**
+This function generates a regression problem with a given number of features, noise level, and other characteristics. It's useful for testing regression algorithms.
+
+
+```python
+from sklearn.datasets import make_regression
+
+X, y = make_regression(n_samples=100, n_features=2, noise=0.1)
+```
+
+### 2. **`make_blobs`**
+Useful for generating isotropic Gaussian blobs for clustering. It can simulate datasets with specific centers or cluster standard deviations.
+
+
+```python
+from sklearn.datasets import make_blobs
+
+X, y = make_blobs(n_samples=100, centers=3, n_features=2, cluster_std=1.5)
+```
+
+### 3. **`make_moons`**
+This function generates a toy dataset of two interleaving half circles (a simple case of non-linearly separable dataset), which is useful for testing algorithms that can capture complex non-linear relationships.
+
+
+```python
+from sklearn.datasets import make_moons
+
+X, y = make_moons(n_samples=100, noise=0.1)
+```
+
+### 4. **`make_circles`**
+Similar to `make_moons`, but this function generates a larger circle containing a smaller circle in 2d. It is another example of a dataset that is useful for evaluating the performance of clustering and classification algorithms.
+
+
+```python
+from sklearn.datasets import make_circles
+
+X, y = make_circles(n_samples=100, factor=0.5, noise=0.05)
+```
+
+### 5. **`make_multilabel_classification`**
+This function creates a random multilabel classification problem, useful for testing multilabel classification algorithms. It generates samples that simulate the dependencies between classes for a more realistic data structure.
+
+
+```python
+from sklearn.datasets import make_multilabel_classification
+
+X, y = make_multilabel_classification(n_samples=100, n_classes=3, n_labels=2)
+```
+
+### 6. **`make_hastie_10_2`**, **`make_friedman1`**, **`make_friedman2`**, **`make_friedman3`**
+These functions generate data for regression problems with features that influence the target in non-linear and interaction ways, based on the work of statisticians Hastie and Friedman.
+
+
+```python
+from sklearn.datasets import make_friedman1
+
+X, y = make_friedman1(n_samples=100, n_features=10, noise=0.0)
+
+```
+
+<hr>
 
 # The Case
 
 <span style="color:#0000FF"> _[https://github\.com/angel\-marchev/case\-cold\-start\-modeling](https://github.com/angel-marchev/case-cold-start-modeling)_ </span>
 
 ![](img/data_synth56.png)
+
+<hr>
 
 # See also
 
@@ -354,7 +454,9 @@
 
 <span style="color:#0000FF"> _[https://www\.marktechpost\.com/2024/04/13/google\-ai\-introduces\-codeclm\-a\-machine\-learning\-framework\-for\-generating\-high\-quality\-synthetic\-data\-for\-llm\-alignment/](https://www.marktechpost.com/2024/04/13/google-ai-introduces-codeclm-a-machine-learning-framework-for-generating-high-quality-synthetic-data-for-llm-alignment/)_ </span>
 
-List with publications:
+<hr>
+
+# List with publications:
 
 1\. Marchev\, A\.\, Marchev\, V\.\, 2024\, Automated Algorithm for Multi\-variate Data Synthesis with Cholesky Decomposition\, ICACS 2023: the 7th International Conference on Algorithms\, Computing and Systems\, Larissa Greece\, Association for Computing Machinery\, New York\, pp\. 1 – 6\, ISBN:979\-8\-4007\-0909\-8\, DOI: 10\.1145/3631908\.3631909;
 
