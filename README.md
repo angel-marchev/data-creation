@@ -10,15 +10,15 @@
 
 <span style="color:#000000">\(</span>  <span style="color:#374151">What is Synthetic Data?\)</span>
 
-<span style="color:#374151">mimics real\-world data</span>
+* mimics real-world data
 
-<span style="color:#374151">created\, rather than collected</span>
+* created, rather than collected
 
-<span style="color:#374151">can be generated in large quantities</span>
+* can be generated in large quantities
 
-<span style="color:#374151">can be generated with specific properties</span>
+* can be generated with specific properties
 
-<span style="color:#374151">may not always accurately reflect the complexities and variability of real\-world data\, so its results should be used with caution</span>
+* may not always accurately reflect the complexities and variability of real-world data, so its results should be used with caution
 
 <hr>
 
