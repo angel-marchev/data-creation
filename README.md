@@ -4,6 +4,8 @@
 
 ![](img/data_synth0.png)
 
+<hr>
+
 # What?
 
 <span style="color:#000000">\(</span>  <span style="color:#374151">What is Synthetic Data?\)</span>
@@ -38,11 +40,13 @@
 
 <span style="color:#000000">\(main emphasis today is synthesis of structured data\, but some imputation is also within the scope due to methodical</span>
 
+<hr>
+
 ![](img/data_synth28.png)
 
 # 
 
-![](img/data_synth29.jpg)
+<hr>
 
 # Data imputation
 
@@ -50,7 +54,7 @@
 
 <span style="color:#000000"> _ _ </span>  <span style="color:#000000"> _Blue points are observations whereas red points are missing observations in the y\-variable; _ </span>  <span style="color:#000000"> _statistics for complete data \(blue and red combined\) are slope \(b\) = 1\, standard error \(se\) = 0\.05 and R2 = 0\.5\. Assuming observations in the x\-variable are complete\, \(a\) represents missing at random \(MAR\)\, \(b\) represents missing not at random \(MNAR\) and \(c\) represents missing completely at random \(MCAR\)\. For the observed data \(blue points\)\, the estimated slope\, se and R2\, are \(a\) b = 0\.86\, se = 0\.11\, R2 = 0\.29\, \(b\) b = 0\.432\, se = 0\.06\, R2 = 0\.23 and \(c\) b = 0\.957\, se = 0\.07\, R2 = 0\.49\._ </span>
 
-![](img/data_synth30.jpg)
+![](img/data_synth30.jpg) <img src="img/data_synth29.jpg" width="100"/>
 
 # Imputation methods
 
