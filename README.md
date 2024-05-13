@@ -18,6 +18,8 @@
 
 <span style="color:#374151">may not always accurately reflect the complexities and variability of real\-world data\, so its results should be used with caution</span>
 
+<hr>
+
 # WHY?
 
 <span style="color:#000000">\(Why create data as means for data analysis?\)</span>
