@@ -135,14 +135,14 @@
 <table>
   <tr>
     <th align=left>
-SMOTE (and its many variations) use the same algorithm to generate new samples. Considering a sample xi, a new sample xnew will be generated considering its k- neareast-neighbors (corresponding to kneighbors). 
+SMOTE (and its many variations) use the same algorithm to generate new samples. Considering a sample x<sub>i</sub>, a new sample x<sub>new</sub> will be generated considering its k- neareast-neighbors (corresponding to kneighbors). 
 
-For instance, the 3 nearest-neighbors are included in the blue circle as illustrated in the figure below. Then, one of these nearest-neighbors xzi is selected and a sample is generated as follows:
+For instance, the 3 nearest-neighbors are included in the blue circle as illustrated in the figure below. Then, one of these nearest-neighbors x<sub>zi</sub> is selected and a sample is generated as follows:
 
-   xnew = xi + λ . (xzi - xi)
+   x<sub>new</sub> = x<sub>i</sub> + λ . (x<sub>zi</sub> - x<sub>i</sub>)
 
-where λ is a random number in the range [0, 1]. This interpolation will create a sample on the line between xi and xzi as illustrated in the image.    </th>
-    <th><img src="img/data_synth36.png" width="500"> </th>
+where λ is a random number in the range [0, 1]. This interpolation will create a sample on the line between x<sub>i</sub> and x<sub>zi</sub> as illustrated in the image.    </th>
+    <th><img src="img/data_synth36.png" width="700"> </th>
   </tr>
 </table>
 
@@ -286,17 +286,21 @@ THEN<br>
 
 ## Use case: some real features
 
-* <span style="color:#000000">IF partial real data set is available</span>
-* <span style="color:#000000">AND business rules have to be derived</span>
-* <span style="color:#000000">THEN</span>
-  * <span style="color:#000000">Derive new variables using:</span>
-    * <span style="color:#000000">Business rules</span>
-    * <span style="color:#000000">Scaling weights to the real variables</span>
-  * <span style="color:#000000">Record\-wise business rules filtering</span>
-
-![](img/data_synth50.png)
-
-![](img/data_synth51.png)
+<table>
+  <tr>
+    <th align=left>
+IF partial real data set is available<br>
+AND business rules have to be derived<br>
+THEN<br>
+1. Derive new variables using:<br>
+Business rules<br>
+Scaling weights to the real variables<br>
+2. Record-wise business rules filtering    
+    <th><img src="img/data_synth50.png" width="400"> <br>
+    <img src="img/data_synth51.png" width="400">
+    </th>
+  </tr>
+</table>
 
 <hr>
 
@@ -318,19 +322,25 @@ THEN<br>
 
 ## Use case: full data sets
 
-![](img/data_synth54.png)
+<table>
+  <tr>
+    <th align=left>
+IF full data set is available:<br>
+confidential<br>
+sensitive<br>
+without license<br>
+THEN<br>
+1. Generate initial random data set<br>
+2. Train Generative adversarial network on the real data set to generate synthetic data<br>
+Using the generative ANN, generate values of simulated data<br> 
+Using discriminative ANN, discriminate real data from simulated data<br>
+If discrimination is successful feed the result to the generative ANN for next simulation<br>
+Else feed the result to discriminative ANN to improve discrimination next time
+    <th><img src="img/data_synth54.png" width="600">
 
-* <span style="color:#000000">IF full data set is available:</span>
-  * <span style="color:#000000">confidential</span>
-  * <span style="color:#000000">sensitive</span>
-  * <span style="color:#000000">without license</span>
-* <span style="color:#000000">THEN</span>
-  * <span style="color:#000000">Generate initial random data set</span>
-  * <span style="color:#000000">Train Generative adversarial network on the real data set to generate synthetic data</span>
-    * <span style="color:#000000">Using the generative ANN\, generate values of simulated data </span>
-    * <span style="color:#000000">Using discriminative ANN\, discriminate real data from simulated data</span>
-    * <span style="color:#000000">If discrimination is successful feed the result to the generative ANN for next simulation</span>
-    * <span style="color:#000000">Else feed the result to discriminative ANN to improve discrimination next time</span>
+    </th>
+  </tr>
+</table>
 
 <hr>
 
