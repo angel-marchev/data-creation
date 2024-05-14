@@ -217,62 +217,33 @@ where λ is a random number in the range [0, 1]. This interpolation will create 
 
 **(Methodological background)**
 
-<span style="color:#000000">===Random===</span>
-
-<span style="color:#000000">Monte\-Carlo simulation</span>
-
-<span style="color:#000000">GAN</span>
-
-<span style="color:#000000">===Non\-random===</span>
-
-<span style="color:#000000">Inverse copula sampling</span>
-
-<span style="color:#000000">Cholesky decomposition</span>
-
-<span style="color:#374151">randomly sampling from a probability distribution</span>
-
-<span style="color:#374151">repeat the sampling process multiple times to accumulate many simulated data points</span>
-
-<span style="color:#374151">Analyze the generated synthetic data to validate that it resembles the distribution of the original data</span>
-
-<span style="color:#000000">a type of deep learning architecture</span>
-
-<span style="color:#000000">two neural networks: a generator and a discriminator</span>
-
-<span style="color:#000000">trained together in a zero\-sum game</span>
-
-<span style="color:#000000">copula is a function that describes a joint distribution of a set of variables</span>
-
-<span style="color:#000000">modeling the dependence structure between variables in the original data and preserve it</span>
-
-<span style="color:#000000">Cholesky decomposition is a factorization of a positive\-definite matrix</span>
-
-<span style="color:#000000">modeling the covariance structure between variables in the original data</span>
-
-<span style="color:#000000">\(Methodological framework\)</span>
-
-<span style="color:#000000">\(opt\.\) Analyze for minimum needed features</span>
-
-<span style="color:#000000">Data generation by \(chosen\) method</span>
-
-<span style="color:#000000">Horizontal synchronization</span>
-
-<span style="color:#000000">Feature \(vertical\) valida</span>
-
-![](img/data_synth45.png)
+| ===Random===            	|                                                                                                                                                                                                                                                      	|
+|-------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Monte Carlo Simulation  	| randomly sampling from a probability distribution<br>repeat the sampling process multiple times to accumulate many simulated data points<br>Analyze the generated synthetic data to validate that it resembles the distribution of the original data 	|
+| GAN                     	| a type of deep learning architecture<br>two neural networks: a generator and a discriminator<br>trained together in a zero-sum game                                                                                                                  	|
+| ===Non-random===        	|                                                                                                                                                                                                                                                      	|
+| Inverse copula sampling 	| copula is a function that describes a joint distribution of a set of variables<br>modeling the dependence structure between variables in the original data and preserve it                                                                           	|
+| Cholesky decomposition  	| Cholesky decomposition is a factorization of a positive-definite matrix<br>modeling the covariance structure between variables in the original data                                                                                                  	|
 
 <hr>
 
 ## Use case: only distributions
 
-* <span style="color:#000000">IF Separate distributions for every variable:</span>
-  * <span style="color:#000000">are available</span>
-  * <span style="color:#000000">could be derived from small representative sample</span>
-  * <span style="color:#000000">could be assumed</span>
-* <span style="color:#000000">AND business rules have to be derived</span>
-* <span style="color:#000000">THEN</span>
-  * <span style="color:#000000">Feature\-wise Monte Carlo simulation</span>
-  * <span style="color:#000000">Record\-wise business rules filtering</span>
+<table>
+  <tr>
+    <th align=left>
+IF Separate distributions for every variable:<br>
+are available<br>
+could be derived from small representative sample<br>
+could be assumed<br>
+AND business rules have to be derived<br>
+THEN<br>
+1. Feature-wise Monte Carlo simulation<br>
+2. Record-wise business rules filtering
+</th>
+    <th><img src="img/data_synth45.png" width="400"> </th>
+  </tr>
+</table>
 
 ![](img/data_synth46.png)
 
@@ -280,34 +251,36 @@ where λ is a random number in the range [0, 1]. This interpolation will create 
 
 ## Use case: distributions & correlations
 
-* <span style="color:#000000">IF Separate distributions for every variable:</span>
-  * <span style="color:#000000">are available</span>
-  * <span style="color:#000000">could be derived from small representative sample</span>
-  * <span style="color:#000000">could be assumed</span>
-* <span style="color:#000000">AND correlations between each variable pair </span>
-* <span style="color:#000000">are available</span>
-* <span style="color:#000000">THEN</span>
-  * <span style="color:#000000">Correlation matrix</span>
-  * <span style="color:#000000">Cholesky decomposition</span>
-  * <span style="color:#000000">Monte Carlo simulation</span>
-  * <span style="color:#000000">Pair wise product </span>
-
-![](img/data_synth47.png)
-
-![](img/data_synth48.png)
+<table>
+  <tr>
+    <th align=left>
+IF Separate distributions for every variable:<br>
+are available<br>
+could be derived from small representative sample<br>
+could be assumed<br>
+AND correlations between each variable pair<br> 
+are available<br>
+THEN<br>
+1. Correlation matrix<br>
+2. Cholesky decomposition<br>
+3. Monte Carlo simulation<br>
+4. Pair wise product </th>
+    <th><img src="img/data_synth47.png" width="400"> <br>
+    <img src="img/data_synth48.png" width="400">
+    </th>
+  </tr>
+</table>
 
 <hr>
 
 ## Use case: joint distribution
 
-* <span style="color:#000000">IF Multi\-variate joint distribution \(copula function\) is available</span>
-* <span style="color:#000000">THEN</span>
-  * <span style="color:#000000">Use copula function to generate simulated normalized sample vectors</span>
-  * <span style="color:#000000">De\-normalize using s</span>  <span style="color:#202122">caling variables of each feature</span>
+* IF Multi-variate joint distribution (copula function) is available
+* THEN
+  1. Use copula function to generate simulated normalized sample vectors
+  2. De-normalize using scaling variables of each feature
 
 ![](img/data_synth49.png)
-
-![](img/data_synth50.png)
 
 <hr>
 
@@ -321,9 +294,9 @@ where λ is a random number in the range [0, 1]. This interpolation will create 
     * <span style="color:#000000">Scaling weights to the real variables</span>
   * <span style="color:#000000">Record\-wise business rules filtering</span>
 
-![](img/data_synth51.png)
+![](img/data_synth50.png)
 
-![](img/data_synth52.png)
+![](img/data_synth51.png)
 
 <hr>
 
