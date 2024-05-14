@@ -60,14 +60,14 @@
 
 <table>
   <tr>
-    <th>
-      <ul style="float:left;">
+    <th align=left>
+      <ul>
         <li>inference based (crosslinked) modeling (horizontal && vertical)</li>
         <li>vs</li>
         <li>single variable imputation (vertical)</li>
      </ul>
     </th>
-    <th><img src="img/data_synth31.png" width="600"/></th>
+    <th><img src="img/data_synth31.png" width="600"></th>
   </tr>
 </table>
 
@@ -77,15 +77,15 @@
 
 <table>
   <tr>
-    <th>
-      <ul style=text-align:left;">
+    <th align=left>
+      <ul>
         <li>distribution preservation noise</li>
         <li>"unknown" class</li>
         <li>mean by subclass instead of the whole variable</li>
         <li>The orthogonal view</li>
      </ul>
     </th>
-    <th><img src="img/data_synth32.png" width="700"/></th>
+    <th><img src="img/data_synth32.png" width="700"></th>
   </tr>
 </table>
 
@@ -93,47 +93,60 @@
 
 ## Distribution altering single variable imputation
 
-<img src="img/data_synth57.png" width="700"/
+<img src="img/data_synth57.png" width="700">
+
+<hr>
 
 ## Random Naive Oversampling
 
-<span style="color:#000000">randomly duplicating instances from the minority class until it is balanced with the majority class</span>
+* randomly duplicating instances from the minority class until it is balanced with the majority class
 
-<span style="color:#000000">For example\, if the minority class has only 30% of the instances in a dataset\, then random naive oversampling would involve duplicating instances from the minority class 3 times</span>
+* For example, if the minority class has only 30% of the instances in a dataset, then random naive oversampling would involve duplicating instances from the minority class 3 times
 
-<span style="color:#000000">it does not take into account the relationships between the features and the class labels \(hence called “naive”\)\.</span>
+<img src="img/data_synth33.png" width="400">
 
-<span style="color:#000000">The simplest possible technique</span>
+*it does not take into account the relationships between the features and the class labels (hence called “naive”).
 
-<span style="color:#000000">can lead to overfitting\, where the model trains to replicate too closely the repeated class\.</span>
+*The simplest possible technique
 
-![](img/data_synth33.png)
+* can lead to overfitting, where the model trains to replicate too closely the repeated class.
 
-![](img/data_synth34.png)
+<img src="img/data_synth34.png" width="400">
 
 <hr>
 
 ## SMOTE and Variants
 
-<span style="color:#000000">SMOTE \(Synthetic Minority Over\-sampling Technique\) is an algorithm for generating synthetic data\, specifically designed to address the problem of imbalanced datasets</span>
-
-<span style="color:#000000">In a binary classification problem\, SMOTE generates synthetic samples of the minority class by interpolating between existing minority class samples\. </span>
-
-<span style="color:#000000">Preserves the intrinsic characteristics of the minority class\. </span>
-
-![](img/data_synth35.png)
-
-![](img/data_synth36.png)
+<table>
+  <tr>
+    <th align=left>
+      <ul>
+        <li>SMOTE (Synthetic Minority Over-sampling Technique) is an algorithm for generating synthetic data, specifically designed to address the problem of imbalanced datasets</li>
+        <li>In a binary classification problem, SMOTE generates synthetic samples of the minority class by interpolating between existing minority class samples.</li>
+        <li>Preserves the intrinsic characteristics of the minority class.</li>
+       </ul>
+    </th>
+    <th><img src="img/data_synth35.png"> </th>
+  </tr>
+</table>
 
 <hr>
 
-<span style="color:#000000"> __SMOTE__ </span>  <span style="color:#000000"> \(and its many variations\) use the same algorithm to generate new samples\. Considering a sample </span>  <span style="color:#000000"> __x__ </span>  <span style="color:#000000"> _i_ </span>  <span style="color:#000000">\, a new sample </span>  <span style="color:#000000"> __x__ </span>  <span style="color:#000000"> _new_ </span>  <span style="color:#000000"> will be generated considering its k\- neareast\-neighbors \(corresponding to </span>  <span style="color:#000000"> __k__ </span>  <span style="color:#000000"> _neighbors_ </span>  <span style="color:#000000">\)\. </span>
+<table>
+  <tr>
+    <th align=left>
+SMOTE (and its many variations) use the same algorithm to generate new samples. Considering a sample xi, a new sample xnew will be generated considering its k- neareast-neighbors (corresponding to kneighbors). 
 
-<span style="color:#000000">For instance\, the 3 nearest\-neighbors are included in the blue circle as illustrated in the figure below\. Then\, one of these nearest\-neighbors </span>  <span style="color:#000000"> __x__ </span>  <span style="color:#000000"> _zi_ </span>  <span style="color:#000000"> is selected and a sample is generated as follows:</span>
+For instance, the 3 nearest-neighbors are included in the blue circle as illustrated in the figure below. Then, one of these nearest-neighbors xzi is selected and a sample is generated as follows:
 
-<span style="color:#000000">   </span>  <span style="color:#000000"> __x__ </span>  <span style="color:#000000"> _new_ </span>  <span style="color:#000000"> __ = x__ </span>  <span style="color:#000000"> _i_ </span>  <span style="color:#000000"> __ \+ __ </span>  <span style="color:#000000"> __λ \.__ </span>  <span style="color:#000000"> __ \(x__ </span>  <span style="color:#000000"> _zi_ </span>  <span style="color:#000000"> __ \- x__ </span>  <span style="color:#000000"> _i_ </span>  <span style="color:#000000"> __\)__ </span>
+   xnew = xi + λ . (xzi - xi)
 
-<span style="color:#000000">where </span>  <span style="color:#000000"> __λ__ </span>  <span style="color:#000000"> is a random number in the range \[0\, 1\]\. This interpolation will create a sample on the line between </span>  <span style="color:#000000"> __x__ </span>  <span style="color:#000000"> _i_ </span>  <span style="color:#000000"> and </span>  <span style="color:#000000"> __x__ </span>  <span style="color:#000000"> _zi_ </span>  <span style="color:#000000"> as illustrated in the image\.</span>
+where λ is a random number in the range [0, 1]. This interpolation will create a sample on the line between xi and xzi as illustrated in the image.    </th>
+    <th><img src="img/data_synth36.png" width="500"> </th>
+  </tr>
+</table>
+
+<hr>
 
 <span style="color:#000000">SMOTE: This is the original implementation of SMOTE\, which generates synthetic samples by interpolating between pairs of minority class samples\. Specifically\, it selects a random minority class sample and its k\-nearest neighbors\, then generates new samples by interpolating between them\.</span>
 
@@ -146,6 +159,8 @@
 <span style="color:#000000">G\-SMOTE: This is a geometric variant of SMOTE that generates synthetic samples by extrapolating from the line segments joining k\-nearest neighbors\. It uses the geometry of the minority class samples to generate more realistic synthetic samples\.</span>
 
 <span style="color:#000000">K\-Means SMOTE: This variant of SMOTE uses k\-means clustering to generate synthetic samples for the minority class\. It first clusters the minority class samples using k\-means\, then generates synthetic samples for each cluster\.</span>
+
+<hr>
 
 <span style="color:#000000">The classifiers trained on synthetic examples generalize well\.</span>
 
