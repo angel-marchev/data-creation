@@ -148,39 +148,33 @@ where λ is a random number in the range [0, 1]. This interpolation will create 
 
 <hr>
 
-<span style="color:#000000">SMOTE: This is the original implementation of SMOTE\, which generates synthetic samples by interpolating between pairs of minority class samples\. Specifically\, it selects a random minority class sample and its k\-nearest neighbors\, then generates new samples by interpolating between them\.</span>
+* SMOTE: This is the original implementation of SMOTE, which generates synthetic samples by interpolating between pairs of minority class samples. Specifically, it selects a random minority class sample and its k-nearest neighbors, then generates new samples by interpolating between them.
 
-<span style="color:#000000">Borderline\-SMOTE: This variant of SMOTE generates synthetic samples for the borderline instances of the minority class\. It identifies the minority class instances that are near the decision boundary of the classifier and applies SMOTE only to those samples\.</span>
+* Borderline-SMOTE: This variant of SMOTE generates synthetic samples for the borderline instances of the minority class. It identifies the minority class instances that are near the decision boundary of the classifier and applies SMOTE only to those samples.
 
-<span style="color:#000000">Adaptive Synthetic Sampling \(ADASYN\): ADASYN is another variant of SMOTE that adapts the number of synthetic samples based on the density of the data distribution\. It generates more synthetic samples for minority class instances that are harder to learn\, thus reducing the bias in the classifier\.</span>
+* Adaptive Synthetic Sampling (ADASYN): ADASYN is another variant of SMOTE that adapts the number of synthetic samples based on the density of the data distribution. It generates more synthetic samples for minority class instances that are harder to learn, thus reducing the bias in the classifier.
 
-<span style="color:#000000">Safe\-Level SMOTE: This is a variant of SMOTE that considers the distribution of the majority class and generates synthetic samples based on the safe\-level\, which is the difference between the minority and majority class densities\.</span>
+* Safe-Level SMOTE: This is a variant of SMOTE that considers the distribution of the majority class and generates synthetic samples based on the safe-level, which is the difference between the minority and majority class densities.
 
-<span style="color:#000000">G\-SMOTE: This is a geometric variant of SMOTE that generates synthetic samples by extrapolating from the line segments joining k\-nearest neighbors\. It uses the geometry of the minority class samples to generate more realistic synthetic samples\.</span>
+* G-SMOTE: This is a geometric variant of SMOTE that generates synthetic samples by extrapolating from the line segments joining k-nearest neighbors. It uses the geometry of the minority class samples to generate more realistic synthetic samples.
 
-<span style="color:#000000">K\-Means SMOTE: This variant of SMOTE uses k\-means clustering to generate synthetic samples for the minority class\. It first clusters the minority class samples using k\-means\, then generates synthetic samples for each cluster\.</span>
+* K-Means SMOTE: This variant of SMOTE uses k-means clustering to generate synthetic samples for the minority class. It first clusters the minority class samples using k-means, then generates synthetic samples for each cluster.
 
 <hr>
 
-<span style="color:#000000">The classifiers trained on synthetic examples generalize well\.</span>
+* The classifiers trained on synthetic examples generalize well.
+ 
+* The classifiers Identify the minority class well (True Negatives).
+* They have fewer False Positives compared to undersampling.
 
-<span style="color:#000000">The classifiers Identify the minority class well \(True Negatives\)\.</span>
-
-<span style="color:#000000">They have fewer False Positives compared to undersampling\.</span>
-
-<span style="color:#000000"> _Advantages _ </span>
-
-<span style="color:#000000">It improves the overfitting caused by random oversampling as synthetic examples are generated rather than a copy of existing examples\.</span>
-
-<span style="color:#000000">No loss of information\.</span>
-
-<span style="color:#000000">It’s simple\.</span>
-
-<span style="color:#000000"> _Disadvantages _ </span>
-
-<span style="color:#000000">While generating synthetic examples\, SMOTE does not take into consideration neighboring examples that can be from other classes\. This can increase the overlapping of classes and can introduce additional noise\.</span>
-
-<span style="color:#000000">SMOTE is not very practical for high\-dimensional data\.</span>
+**Advantages** 
+* It improves the overfitting caused by random oversampling as synthetic examples are generated rather than a copy of existing examples.
+* No loss of information.
+* It’s simple.
+ 
+**Disadvantages** 
+* While generating synthetic examples, SMOTE does not take into consideration neighboring examples that can be from other classes. This can increase the overlapping of classes and can introduce additional noise.
+* SMOTE is not very practical for high-dimensional data.
 
 <hr>
 
@@ -192,13 +186,11 @@ where λ is a random number in the range [0, 1]. This interpolation will create 
 
 ## Monte-Carlo simulation
 
-![](img/data_synth38.png)
+<img src="img/data_synth38.png" width="300">
 
-<span style="color:#374151">randomly generate many possible outcomes and use accumulation of these outcomes as an estimate of the expected value\.</span>
-
-<span style="color:#000000">Relays on Law of large numbers </span>
-
-<span style="color:#374151">Useful when it is difficult or impossible to solve a problem analytically\. The method can provide good results even when the underlying system is complex or poorly understood\. </span>
+* randomly generate many possible outcomes and use accumulation of these outcomes as an estimate of the expected value.
+* Relays on Law of large numbers 
+* Useful when it is difficult or impossible to solve a problem analytically. The method can provide good results even when the underlying system is complex or poorly understood. 
 
 ![](img/data_synth39.png)
 
@@ -206,21 +198,24 @@ where λ is a random number in the range [0, 1]. This interpolation will create 
 
 ## Statistical distributions
 
-![](img/data_synth44.png)
-
-<span style="color:#000000">>100s</span>
-
-<span style="color:#000000">Each with its own set of parameters</span>
-
-<span style="color:#000000">Method of moments \(or GMM\)</span>
-
-<span style="color:#000000">for distribution fitting</span>
+<table>
+  <tr>
+    <th align=left>
+<ul>
+<li>100s</li>
+  <li>Each with its own set of parameters</li>
+  <li>Method of moments (or GMM) for distribution fitting</li>
+  </ul>
+</th>
+    <th><img src="img/data_synth44.png" width="500"> </th>
+  </tr>
+</table>
 
 <hr>
 
 ## Generating synthetic observations
 
-<span style="color:#000000">\(Methodological background \)</span>
+**(Methodological background)**
 
 <span style="color:#000000">===Random===</span>
 
