@@ -89,6 +89,10 @@
   </tr>
 </table>
 
+[Demo code](code/missing_values_mean_by_cat.ipynb)
+
+[Demo code](code/missing_values_by_noisy_input.ipynb)
+
 <hr>
 
 ## Distribution altering single variable imputation
@@ -112,6 +116,8 @@
 * can lead to overfitting, where the model trains to replicate too closely the repeated class.
 
 <img src="img/data_synth34.png" width="400">
+
+[Demo code](code/Random_naive_oversampling.ipynb)
 
 <hr>
 
@@ -176,6 +182,8 @@ where λ is a random number in the range [0, 1]. This interpolation will create 
 * While generating synthetic examples, SMOTE does not take into consideration neighboring examples that can be from other classes. This can increase the overlapping of classes and can introduce additional noise.
 * SMOTE is not very practical for high-dimensional data.
 
+[Demo code](code/oversampl_smote.ipynb)
+
 <hr>
 
 ## Random numbers generators
@@ -193,6 +201,10 @@ where λ is a random number in the range [0, 1]. This interpolation will create 
 * Useful when it is difficult or impossible to solve a problem analytically. The method can provide good results even when the underlying system is complex or poorly understood. 
 
 ![](img/data_synth39.png)
+
+[Demo code](code/dice_distribution.ipynb)
+
+[Demo code](code/MC_dist_fit.ipynb)
 
 <hr>
 
@@ -271,6 +283,8 @@ THEN<br>
   </tr>
 </table>
 
+[Demo code](code/data_synth_algorithm-cholesky.ipynb)
+
 <hr>
 
 ## Use case: joint distribution
@@ -281,6 +295,8 @@ THEN<br>
   2. De-normalize using scaling variables of each feature
 
 ![](img/data_synth49.png)
+
+[Demo code](code/Cold_Modeling_Copula.ipynb)
 
 <hr>
 
@@ -318,6 +334,8 @@ Scaling weights to the real variables<br>
 
 ![](img/data_synth53.png)
 
+[Demo code](code/probablistic_concatenation.ipynb)
+
 <hr>
 
 ## Use case: full data sets
@@ -341,6 +359,8 @@ Else feed the result to discriminative ANN to improve discrimination next time
     </th>
   </tr>
 </table>
+
+[Demo code](code/GAN_sim_data.ipynb)
 
 <hr>
 
