@@ -26,7 +26,7 @@ flowchart LR
     
     subgraph data_engin[Data enrichment]
     enginer_f[Feature engineering]
-    engine_method[Multiple methods & techniques]
+    engine_method[Multiple techniques]
     end
     
     datacreation-->|No data at all| no_data
